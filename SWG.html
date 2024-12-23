@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Game snake water gun</title>
+</head>
+<body>
+    
+
+    <script>
+        // snake water gun game
+            let player = prompt("enter between s,w and g:");
+            let comp= Math.floor(Math.random() * 3);
+            let system =["s","w","g"][comp];
+
+            {
+                if (system==player) 
+                {
+                   alert("nobody is winner, try again");
+                   console.log("both chose the same, so nobody is winner,try again");            
+                }
+                else if(system =="s" && player=="w"){
+                    alert("system won the game!")
+                    console.log("syatem chose s and you chose w so SYSTEM WON THE GAME!")
+                }
+                else if(system =="s" && player=="g"){
+                    alert("congrats, you won the game.")
+                    console.log("syatem chose s and you chose g so YOU WON THE GAME!")
+                }
+                else if(system =="g" && player=="w"){
+                    alert("congrats, you won the game.")
+                    console.log("syatem chose g and you chose w so YOU WON THE GAME!")
+                }
+                else if(system =="g" && player=="s"){
+                    alert("congrats, you won the game.")
+                    console.log("syatem chose g and you chose s so YOU WON THE GAME!")
+                }
+                else if(system =="w" && player=="s"){
+                    alert("congrats, you won the game.")
+                    console.log("syatem chose w and you chose s so YOU WON THE GAME!")
+                }
+                else if(system =="w" && player=="g"){
+                    alert("congrats, you won the game.")
+                    console.log("syatem chose w and you chose g so SYSTEM WON THE GAME!")
+                }
+                else{
+                    alert("please enter between s,w and g")
+                }
+            }
+
+           
+
+    </script>
+    
+</body>
+</html>
